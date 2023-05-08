@@ -9,6 +9,7 @@
   box-sizing: border-box;
   overflow-x: hidden;
   width: 100vw;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,7 +35,6 @@
     #780eff 100%
   );
 }
-
 
 .IRRESISTIBLE-DEALS {
   text-align: center;
@@ -117,7 +117,6 @@
   width: 80%;
   height: 31vh;
   border-radius: 11px;
-  box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .t-shirt {
@@ -204,33 +203,31 @@
   );
 }
 
-.Customize{
-  width:30vw;
+.Customize {
+  width: 30vw;
   height: 270px;
   text-transform: capitalize;
   font-size: 2vw;
   align-items: self-start;
-  
 }
 
-.strt_customizing{
+.strt_customizing {
   position: relative;
-  width:25vw;
+  width: 25vw;
   height: 10vh;
-  background: linear-gradient(91.02deg, #0094FF 5.59%, #BD00FF 99.5%);
-box-shadow: inset 0px 0px 29px #FFFFFF;
-border-radius: 11px;
-font-size: 1.7vw;
-display: flex;
-justify-content: center;
-align-items: center;
+  background: linear-gradient(91.02deg, #0094ff 5.59%, #bd00ff 99.5%);
+  box-shadow: inset 0px 0px 29px #ffffff;
+  border-radius: 11px;
+  font-size: 1.7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 #Content_Range {
   position: relative;
   width: 90vw;
-  top:100px;
+  top: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -238,7 +235,7 @@ align-items: center;
 .Content-Ph3 {
   font-family: "Plus Jakarta Sans";
   color: #000000;
-  font-size:1.4vw;
+  font-size: 1.4vw;
 }
 .Content-Ph1 {
   font-weight: 900;
@@ -248,5 +245,91 @@ align-items: center;
   position: relative;
   margin-bottom: 4vh;
   margin-top: 3vh;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
+
+.img-Ma {
+  background: url("../assets/Girl1.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.img-Mb {
+  background: url("../assets/Girl2.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.img-Mc {
+  background: url("../assets/Girl3.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.img-Md {
+  background: url("../assets/Girl4.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.img-Me {
+  background: url("../assets/Girl5.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#price {
+  position: relative;
+  font-family: "Plus Jakarta Sans";
+  word-spacing: 0.2em;
+  font-size: large;
+  width: 11vw;
+  top: 0.3vh;
+  margin: auto;
+}
+
+/* ------------------ */
+.pp_h1{
+  font-family: "Plus Jakarta Sans";
+  word-spacing: .1em;
+  margin-top: 8vh;
+}
+
+.PP_para1{
+  font-size: 1.4vw;
+  line-height:3.8vh;
+  font-family: "Plus Jakarta Sans";
+  word-spacing: .9em;
+}
+
+.PP_para2{
+  font-size: 1.2vw;
+  line-height:3.8vh;
+  font-family: "Plus Jakarta Sans";
+  word-spacing: .5em;
+}
+.PP_UL li{
+  font-size: 1.2vw;
+  line-height:3.8vh;
+  font-family: "Plus Jakarta Sans";
+  word-spacing: .5em;
+  margin-bottom: 2vh;
+}
+
+/* ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+li span {
+  font-weight: bold;
+}
+.edit {
+  background-color: #4caf50;
+}
+.delete {
+  background-color: #f44336;
+} */

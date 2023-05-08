@@ -30,7 +30,9 @@ export default function Step5() {
       <div id="Content">
         <h1 className="Content-h1">Last step, Add detailing to your Item.</h1>
         <h3 className="Content-h3">Collar style</h3>
-        <div className="carousel-collar">
+        <div className="carousel-collar" style={{
+          height:'20vh'
+        }}>
           <Slider {...settings}>
             <div className="carousel__item">
               <div id="collar-img-holder">

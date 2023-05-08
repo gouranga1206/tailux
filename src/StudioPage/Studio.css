@@ -506,6 +506,7 @@ span {
   justify-content: center;
   align-items: center;
   background-color: white;
+  z-index: 1;
 }
 
 #next {
@@ -648,7 +649,7 @@ form label input[type="radio"]:checked + .check {
 #Footer {
   position: relative;
   width: 100vw;
-  top: 120px;
+  align-self: flex-end;
   display: flex;
   flex-direction: column;
   background-color: #000;
@@ -945,27 +946,7 @@ button[type="button"] {
   background-color: #ccc;
   color: #333;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 20px;
-}
-li {
-  background-color: #fff;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 3px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-li span {
-  font-weight: bold;
-}
-.edit {
-  background-color: #4caf50;
-}
-.delete {
-  background-color: #f44336;
-}
+
 
 #Size-fit {
   position: relative;
