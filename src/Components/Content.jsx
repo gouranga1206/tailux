@@ -16,35 +16,21 @@ export default function Content() {
   };
 
   const handleLabelClick = (event) => {
-    // const input = event.target.previousElementSibling;
-    // if (input.type === "radio") {
-    //   input.checked = true;
-    // }
      const input = event.target.previousElementSibling;
   if (input.type === "radio") {
     input.checked = true;
-    // const labelValue = event.target.innerText.trim();
-    // const container = document.querySelector(".container");
-    // container.innerText = labelValue;
   }
   };
-  // const handleLabelClick = (event) => {
-  //   const input = event.target.previousElementSibling;
-  //   if (input.type === "radio") {
-  //     input.checked = true;
-  //     const labelValue = event.target.innerText.trim();
-  //     const container = document.querySelector(".container");
-  //     container.innerText = labelValue;
-  //   }
-  // };
+
   return (
     <div id="Content">
-      <h1>Select The Product to Customize</h1>
-      <h3>Select Category</h3>
-      <div className="container zghj">
-        Choose Category{" "}
-        <i className="fa-solid fa-sort-down" onClick={handleDropdownClick}></i>
-        <div className="items" style={{ display: displayItems ? "" : "none" }}>
+      <h1 className="Content-h1">Select The Product to Customize</h1>
+      <h3 className="Content-h3">Select Category</h3>
+      <div className="container">
+      <div className="dropdown-box-page1">
+        Choose Category
+        <i className="fa-solid fa-sort-down" onClick={handleDropdownClick}></i></div>
+        <div className="items down-item-1" style={{ display: displayItems ? "" : "none" }}>
           <form>
             <label htmlFor="">
               <input
@@ -76,18 +62,20 @@ export default function Content() {
           </form>
         </div>
       </div>
-      <h3 id="Select-product">Select product to Customize</h3>
-      <div className="container Search-Button">
-        {" "}
+      <h3 className="Content-h3">Select product to Customize</h3>
+      <div className="container">
+
+        <div className="dropdown-box-page1">
         Search Products
         <i
           className="fa-solid fa-magnifying-glass"
           onClick={handleDropClick}
           style={{ cursor: "pointer" }}
         ></i>
+        </div>
       </div>
       <div
-        className="items down-item"
+        className="items down-item-2"
         style={{ display: displayDrop ? " " : "none" }}
       >
         <form action="">

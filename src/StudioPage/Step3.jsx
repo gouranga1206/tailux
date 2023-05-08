@@ -5,6 +5,7 @@ import Footer from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
+
 export default function Step3() {
   const navigate = useNavigate();
   const Previous = useNavigate();
@@ -28,15 +29,15 @@ export default function Step3() {
     );
   });
   return (
-    <>
+    <div id="Step-All-StudioPage">
       <Header />
       <Banner />
       <Tag />
-      <div id="c"></div>
+      <div id="StudioPage-Step-3"></div>
       <div id="Content">
-        <h1>Select Color</h1>
-        <h3>Darks</h3>
-        <div className="darks">
+        <h1 className="Content-h1">Select Color</h1>
+        <h3 className="Content-h3">Darks</h3>
+        <div className="StudioPage-Select-Color">
           <table>
             <tbody>
               <tr>{colorCells.slice(0, 9)}</tr>
@@ -46,8 +47,8 @@ export default function Step3() {
             </tbody>
           </table>
         </div>
-        <h3>Classics</h3>
-        <div className="darks">
+        <h3 className="Content-h3">Classics</h3>
+        <div className="StudioPage-Select-Color">
           <table>
             <tbody>
               <tr>{colorCells.slice(0, 9)}</tr>
@@ -58,20 +59,19 @@ export default function Step3() {
           </table>
         </div>
       </div>
+      <div className="Buttons">
       <button
         id="previous"
         onClick={() => Previous("/step2")}
-        style={{
-          marginTop: "30vh",
-        }}
       >
         Previous
       </button>
       <button id="next" onClick={() => navigate("/step4a")}>
         Next
       </button>
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

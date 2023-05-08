@@ -4,19 +4,20 @@ import Tag from "../Components/Tag";
 import Footer from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
 import React, { Component } from 'react';
+import './Studio.css';
 
 
 export default function Step4() {
   const navigate = useNavigate();
   const Previous = useNavigate();
   return (
-    <>
+    <div id="Step-All-StudioPage">
       <Header />
       <Banner />
       <Tag />
       <div id="d"></div>
       <div id="Content">
-        <h1>Select Size & Fitting</h1>
+        <h1 className="Content-h1">Select Size & Fitting</h1>
         <div id="Size-fit">
           <div className="form">
           <div className="user">
@@ -90,16 +91,16 @@ export default function Step4() {
         
      
       </div>
-      <button id="previous" onClick={() => Previous("/step3")} style={{
-        marginTop: "30vh",
-      }}>
+      <div className="Buttons">
+      <button id="previous" onClick={() => Previous("/step3")} >
         Previous
       </button>
       <button id="next" onClick={() => navigate("/step5")}>
         Next
       </button>
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

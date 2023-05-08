@@ -5,6 +5,7 @@ import Footer from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
 import React from "react";
 import Slider from "react-slick";
+import './Studio.css';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,14 +22,14 @@ export default function Step5() {
     slidesToScroll: 3,
   };
   return (
-    <>
+    <div id="Step-All-StudioPage">
       <Header />
       <Banner />
       <Tag />
       <div id="e"></div>
       <div id="Content">
-        <h1>Last step, Add detailing to your Item.</h1>
-        <h3>Collar style</h3>
+        <h1 className="Content-h1">Last step, Add detailing to your Item.</h1>
+        <h3 className="Content-h3">Collar style</h3>
         <div className="carousel-collar">
           <Slider {...settings}>
             <div className="carousel__item">
@@ -69,7 +70,7 @@ export default function Step5() {
             </div>
           </Slider>
         </div>
-        <h3>Buttons style</h3>
+        <h3 className="Content-h3">Buttons style</h3>
         <div className="carousel-collar">
           <Slider {...settings}>
             <div className="carousel__item">
@@ -120,20 +121,18 @@ export default function Step5() {
           </Slider>
         </div>
       </div>
+      <div className="Buttons">
       <button
         id="previous"
-        style={{
-          marginTop: "20vh",
-        }}
         onClick={() => Previous("/step4a")}
       >
         Previous
       </button>
-      <button id="next" onClick={() => navigate("/")}>
+      <button id="next" onClick={() => navigate("/mens")}>
         Next
       </button>
-
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }

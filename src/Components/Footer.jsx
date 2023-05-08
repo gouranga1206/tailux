@@ -1,6 +1,7 @@
 export default function Footer() {
     return(
         <div id="Footer">
+        <div className="combineFooting">
             <div className="table">
                 <table>
                     <tr>
@@ -39,7 +40,10 @@ export default function Footer() {
             <div className="connect">
         
             </div>
-            <h1 id="copyright">@Copyright 2023 TailuX</h1>
+            </div>
+            <div id="copyright">
+            <h1>@Copyright 2023 TailuX</h1>
+            </div>
         </div>
     )
 
